@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Solutions</title>
+    <style>
+        .tab {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .tab div {
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+        }
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #e0e0e0;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solutions and Answers of Assignment-3</h1>
+    <div class="tab">
+        <div onclick="showTab(1)">Q1</div>
+        <div onclick="showTab(2)">Q2</div>
+        <div onclick="showTab(3)">Q3</div>
+        <div onclick="showTab(4)">Q4</div>
+        <div onclick="showTab(5)">Q5</div>
+        <div onclick="showTab(6)">Q6</div>
+        <div onclick="showTab(7)">Q7</div>
+        <div onclick="showTab(8)">Q8</div>
+        <div onclick="showTab(9)">Q9</div>
+        <div onclick="showTab(10)">Q10</div>
+        <div onclick="showTab(11)">Q11</div>
+    </div>
+
+    <div id="content1" class="tab-content"></div>
+    <div id="content2" class="tab-content"></div>
+    <div id="content3" class="tab-content"></div>
+    <div id="content4" class="tab-content"></div>
+    <div id="content5" class="tab-content"></div>
+    <div id="content6" class="tab-content"></div>
+    <div id="content7" class="tab-content"></div>
+    <div id="content8" class="tab-content"></div>
+    <div id="content9" class="tab-content"></div>
+    <div id="content10" class="tab-content"></div>
+    <div id="content11" class="tab-content"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

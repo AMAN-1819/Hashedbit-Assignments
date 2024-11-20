@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Code Solutions</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab(event, 'question1')">Question 1</button>
+        <button class="tab-button" onclick="openTab(event, 'question2')">Question 2</button>
+        <button class="tab-button" onclick="openTab(event, 'question3')">Question 3</button>
+        <button class="tab-button" onclick="openTab(event, 'question4')">Question 4</button>
+    </div>
+
+    <div id="question1" class="tab-content">
+        <h3>Display Even Numbers from 1 to 100:</h3>
+        <button onclick="displayEvenNumbers()">Show Even Numbers</button>
+        <p id="evenNumbers"></p>
+    </div>
+
+    <div id="question2" class="tab-content">
+        <h3>Calculator:</h3>
+        <input id="num1" type="number" placeholder="Enter first number">
+        <input id="num2" type="number" placeholder="Enter second number">
+        <select id="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <p id="calcResult"></p>
+    </div>
+
+    <div id="question3" class="tab-content">
+        <h3>Calculate Tax on Salary:</h3>
+        <input id="salary" type="number" placeholder="Enter salary">
+        <button onclick="findTax()">Calculate Tax</button>
+        <p id="taxResult"></p>
+    </div>
+
+    <div id="question4" class="tab-content">
+        <h3>Sum of Product of Digits:</h3>
+        <input id="n1" type="number" placeholder="Enter first number">
+        <input id="n2" type="number" placeholder="Enter second number">
+        <button onclick="sumOfProducts()">Calculate Sum of Products</button>
+        <p id="productSumResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
